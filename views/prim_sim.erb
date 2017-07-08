@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Prim Sim</title>
+	</head>
+	<body>
+		<form method = "post" action = "/ini-graph">
+			<h4>Enter the number of vertices (more than 3): <input type = "number" name = "nv" min = "3">
+				<input type = "submit" value = "Enter">
+			</h4>
+		</form>
+		<br>
+		<form method = "post" action = "/add-edge">
+			<h4>Enter the value of edge between two nodes<input type = "number" name = "src"><input type = "number" name = "dist"><input type = "number" name = "weight"></h4>
+		</form>
+		<br>
+		<form method = "post" action = "/inc-node">
+			<h4>Increase the number of node? (your current # + desired amount): <input type = "number" name = "inc" min = "0">
+				<input type = "submit" value = "Enter">
+			</h4>
+		</form>
+		<br>
+		<form method = "post" action = "/print-prim">
+			<input type = "sumit" value = "Print">
+		</form>
+		<div>
+			<%= ret %>
+		</div>
+	</body>
+</html>
